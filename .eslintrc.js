@@ -3,11 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'plugin:prettier/recommended'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
@@ -29,5 +25,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/react-in-jsx-scope': 0,
     'no-unused-vars': 0,
+    'no-console': 0,
+    'default-param-last': 0,
+    'no-case-declarations': 0,
   },
 };
