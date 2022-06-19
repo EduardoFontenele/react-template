@@ -28,5 +28,6 @@ module.exports = {
     'no-console': 0,
     'default-param-last': 0,
     'no-case-declarations': 0,
+    'func-names': 0,
   },
 };

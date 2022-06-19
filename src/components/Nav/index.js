@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { NavBar } from './styled';
 
 export default function Nav() {
-  const buttonIsClicked = useSelector((state) => state.loginReducer.logged);
+  const botaoClicado = useSelector((state) => state.exampleReducer.botaoClicado);
 
   return (
     <NavBar>
@@ -18,9 +18,7 @@ export default function Nav() {
       <a href="/login">
         <FaUser />
       </a>
-      <p className="text-white">
-        {buttonIsClicked ? 'Bem-vindo de volta' : 'Faça login para continuar'}
-      </p>
+      <p>{botaoClicado ? 'User is logged' : 'User is off'}</p>
     </NavBar>
   );
 }

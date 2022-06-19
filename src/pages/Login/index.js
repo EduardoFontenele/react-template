@@ -6,7 +6,6 @@ import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { LoginForm, LoginDiv } from './styled';
 import * as exampleActions from '../../store/modules/example/actions';
-import * as loginReduce from '../../store/modules/logged/actions';
 
 export default function Login() {
   const dispatch = useDispatch();
@@ -14,13 +13,7 @@ export default function Login() {
   function handleClick(e) {
     e.preventDefault();
 
-    dispatch(loginReduce.login());
-
-    toast('Você entrou com sucesso', {
-      toastId: 'logged',
-      className: 'toast-container',
-      theme: 'dark',
-    });
+    dispatch(exampleActions.clickButtonRequest());
   }
 
   return (
